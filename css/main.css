@@ -1,0 +1,402 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: A2D2C6;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* end of presets, start of nav */
+
+.header {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    background-color: #a2d2c6;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0.0625rem solid black;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    background-color: #a2d2c6;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0.0625rem solid black;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9rem; /* Adjust the font size as needed */
+    flex: 1;
+    text-align: center;  
+    font-weight: bold;  
+    width: 100%;
+    margin: 1em;
+    border: 1px solid transparent; 
+    transition: background-color 0.3s ease;
+}
+
+.nav-links:hover {
+    background-color: rgb(244 183 183);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 0;
+    outline: none;
+    
+}
+
+
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(244 183 183);
+    color: black;
+    padding: 1em;
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 1em;
+    margin: 0.5em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.weddings {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(255, 255, 255);
+    color: black;
+    max-width: 100%;
+    text-align: center;
+    margin: 0.5em;
+    margin-top: 2.5em;
+}
+
+.weddings__gallery {
+    margin: 0.5em;
+    margin-bottom: 5em;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    background: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.book__links {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portraits {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(255, 255, 255);
+    color: black;
+    margin: 0.5em;
+    margin-bottom: 5em;
+}
+
+.portrait__gallery {
+    margin-bottom: 5em;
+    margin: 0.5em;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    background: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.other {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(255, 255, 255);
+    color: black;
+    margin: 0.5em;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.other__gallery {
+    margin: 0.5em;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    background: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    background-color: #a2d2c6;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+    border-top: 0.0625rem solid black;
+    width: 100%;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9rem; /* Adjust the font size as needed */
+    flex: 1;
+    text-align: center;  
+    font-weight: bold;  
+    width: 100%;
+    margin: 1em;
+    border: 1px solid transparent; 
+    transition: background-color 0.3s ease;
+}
+
+.footer-links:hover {
+    background-color: rgb(244 183 183);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 0;
+}
+
+.main {
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+.photo-book {
+    max-width: 100%;
+    height: auto;
+    padding: 0.5em;
+    /*border: solid black;*/
+    margin-bottom: 0.2em;
+    display: inline-block;
+}
+
+/*.book-title {
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+    border: solid black;
+}
+*/
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 10em;
+    margin: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 10em;
+    margin: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+.wedding-services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    background-color: #ffffff; /* Set box background color */
+    width: 100%;
+    margin-bottom: 2em;
+    border-radius: 1em;
+}
+
+.portrait-services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;    
+    background-color: #ffffff; /* Set box background color */
+    width: 100%;
+    margin-bottom: 2em;
+    border-radius: 1em;
+}
+
+.other-services {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 2em;        
+        background-color: #ffffff; /* Set box background color */
+        width: 100%;
+        margin-bottom: 2em;
+        border-radius: 1em;
+        
+    }
+
+
+.subtitle {
+    color: #000000;
+    border: 0.0625rem solid black;
+    border-radius: 1.0rem;
+    margin: 0.5em;
+    width: 90%;
+    padding: 1em;
+    font-size: 1em;
+    background-color: #a2d2c6;
+    /* Set subtitle styles */
+}
+
+/* Add margin to separate the boxes if needed */
+/*.box + .box {
+    margin-bottom: 1em;
+}*/
+
+.service-title {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.email {
+    font-style: bold;
+    font-size: 1rem;
+}
+
+.warning {
+    font-size: 1.5rem;
+    font-style: bold;
+    margin:  0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 0);
+}
+
+
+.warning-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: solid #000000;
+    border-top: solid #000000;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.warning-message {
+    border: 0.2rem solid black;
+    margin: 0.5em;
+    background-color: rgb(255, 233, 66);
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.warning-social img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: auto;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        padding: 0.5em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .warning {
+        font-size: 1.2rem;
+    }
+
+    .warning-social img {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        font-size: 0.9rem;
+    }
+}
+
+/*@media only screen and (min-width: 1200px) {
+    .nav-links {
+        margin: 0; /* Adjust the margin as needed *
+    }
+}*/
